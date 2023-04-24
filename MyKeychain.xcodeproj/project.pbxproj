@@ -42,7 +42,6 @@
 		F431E33129F5B96A0014BA8A = {
 			isa = PBXGroup;
 			children = (
-				F46050E729F71966009FFD3E /* AddNewIds.swift */,
 				F431E33C29F5B96A0014BA8A /* MyKeychain */,
 				F431E33B29F5B96A0014BA8A /* Products */,
 			);
@@ -66,6 +65,7 @@
 				F431E34629F5B96B0014BA8A /* Assets.xcassets */,
 				F431E34829F5B96B0014BA8A /* LaunchScreen.storyboard */,
 				F431E34B29F5B96B0014BA8A /* Info.plist */,
+				F46050E729F71966009FFD3E /* AddNewIds.swift */,
 			);
 			path = MyKeychain;
 			sourceTree = "<group>";
