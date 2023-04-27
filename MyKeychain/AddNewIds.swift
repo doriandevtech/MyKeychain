@@ -17,7 +17,24 @@ class AddNewIds: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupTextField()
     }
 
+}
+
+
+extension AddNewIds: UITextFieldDelegate {
+    
+    func setupTextField() {
+        urlLinkTF.delegate = self
+        userIdTF.delegate = self
+        passwordTF.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        urlLinkTF.resignFirstResponder()
+        userIdTF.resignFirstResponder()
+        passwordTF.resignFirstResponder()
+        return true
+    }
 }
