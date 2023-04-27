@@ -25,9 +25,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                <connections>
+                                    <action selector="addBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oih-6z-xuP"/>
+                                </connections>
                             </button>
                             <connections>
-                                <segue destination="cgk-ow-1bM" kind="show" id="wCq-ba-YZy"/>
+                                <segue destination="cgk-ow-1bM" kind="show" identifier="addPwd" id="OT1-9X-AOI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
