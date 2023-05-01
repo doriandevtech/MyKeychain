@@ -78,6 +78,9 @@
                                         <rect key="frame" x="0.0" y="200" width="335" height="32"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <action selector="validNewIdBtnPressed:" destination="cgk-ow-1bM" eventType="touchUpInside" id="EDD-Um-Sat"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

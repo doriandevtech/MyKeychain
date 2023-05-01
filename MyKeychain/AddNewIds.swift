@@ -19,6 +19,16 @@ class AddNewIds: UIViewController {
         super.viewDidLoad()
         setupTextField()
     }
+    
+    @IBAction func validNewIdBtnPressed(_ sender: UIButton) {
+        urlLinkTF.resignFirstResponder()
+        userIdTF.resignFirstResponder()
+        passwordTF.resignFirstResponder()
+        guard let url = urlLinkTF.text else { return }
+        guard let userId = userIdTF.text else { return }
+        guard let pwd = passwordTF.text else { return }
+    }
+    
 
 }
 
