@@ -27,6 +27,9 @@ class AddNewIds: UIViewController {
         guard let url = urlLinkTF.text else { return }
         guard let userId = userIdTF.text else { return }
         guard let pwd = passwordTF.text else { return }
+        UDHelper.shared.setUrl(url)
+        UDHelper.shared.setUser(userId)
+        UDHelper.shared.setPwd(pwd)
     }
     
 
