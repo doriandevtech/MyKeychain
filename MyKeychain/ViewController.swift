@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var addBtn: UIButton!
+    @IBOutlet weak var tableView: UITableView!
     
     /// Segue's identifier from ListController view to DeailController's
     let addPwd = "addPwd"
