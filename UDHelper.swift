@@ -54,4 +54,16 @@ class UDHelper {
         a.append(newValue)
         userDefaults.set(a, forKey: itemPwdKey)
     }
+    
+    func removeFromArray(_ index: Int) {
+        var a = getUser()
+        a.remove(at: index)
+        userDefaults.set(a, forKey: itemUserKey)
+        a = getUrl()
+        a.remove(at: index)
+        userDefaults.set(a, forKey: itemUrlKey)
+        a = getPwd()
+        a.remove(at: index)
+        userDefaults.set(a, forKey: itemPwdKey)
+    }
 }
