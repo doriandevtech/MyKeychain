@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    static var shared = ViewController()
+    
     @IBOutlet weak var addBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
@@ -17,7 +19,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupTableView()
     }
 
 
@@ -36,3 +38,27 @@ class ViewController: UIViewController {
     
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func setupTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return UDHelper.shared.getUser().count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = UDHelper.shared.getUser()[indexPath.row]
+        let cell = UITableViewCell()
+        var config = cell.defaultContentConfiguration()
+        config.text = item
+        cell.contentConfiguration = config
+        return cell
+    }
+}
