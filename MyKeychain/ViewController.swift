@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var addBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
-    /// Segue's identifier from ListController view to DeailController's
+    /// Segue's identifier from ViewController view to AddNewIds
     let addPwd = "addPwd"
 
     override func viewDidLoad() {
@@ -28,9 +28,9 @@ class ViewController: UIViewController {
     }
     
     
-    // MARK: - Navigation
+    // MARK: - Navigation Add btn
         
-        /// Segue performed when a row is selected
+        /// Segue performed when add btn is clicked
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             guard segue.identifier == addPwd else { return }
             guard let _ = segue.destination as? AddNewIds else { return }
@@ -80,4 +80,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(UDHelper.shared.getUser()[indexPath.row])
+        AddNewIds.shared.urlLinkTF.text = UDHelper.shared.getUser()[indexPath.row]
+        AddNewIds.shared.userIdTF.text = UDHelper.shared.getUser()[indexPath.row]
+        AddNewIds.shared.passwordTF.text = UDHelper.shared.getUser()[indexPath.row]
+        performSegue(withIdentifier: addPwd, sender: indexPath.row)
+    }
 }
+
