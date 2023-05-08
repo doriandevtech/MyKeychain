@@ -9,6 +9,8 @@ import UIKit
 
 class AddNewIds: UIViewController {
     
+    static var shared = AddNewIds()
+    
     @IBOutlet weak var urlLinkTF: UITextField!
     @IBOutlet weak var userIdTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
