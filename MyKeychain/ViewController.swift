@@ -38,21 +38,27 @@ class ViewController: UIViewController {
     
 }
 
+//MARK: Extension for VC : UITableView
+
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
+///    Setup tableView
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
     }
     
+///    Number of sections in tableView
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+///    Number of rows per section in tableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return UDHelper.shared.getUser().count
     }
     
+///   Contents of a cell at a given index
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = UDHelper.shared.getUser()[indexPath.row]
         let cell = UITableViewCell()
@@ -62,10 +68,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+///    Editing a row
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
+///    Behaviour of the editing style
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             UDHelper.shared.removeFromArray(indexPath.row)
