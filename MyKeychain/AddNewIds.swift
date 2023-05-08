@@ -39,14 +39,18 @@ class AddNewIds: UIViewController {
 
 }
 
+//MARK: Extension for AddNewIds : UITextfield
+
 extension AddNewIds: UITextFieldDelegate {
     
+///    Setup textfield
     func setupTextField() {
         urlLinkTF.delegate = self
         userIdTF.delegate = self
         passwordTF.delegate = self
     }
     
+///    Configure "return" btn's behaviour
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         urlLinkTF.resignFirstResponder()
         userIdTF.resignFirstResponder()
