@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         setupTableView()
     }
 
-
+    
+///    Button to add new user
     @IBAction func addBtnPressed(_ sender: UIButton) {
         performSegue(withIdentifier: addPwd, sender: sender)
     }
@@ -81,6 +82,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+///    When a row is selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(UDHelper.shared.getUser()[indexPath.row])
         AddNewIds.shared.urlLinkTF.text = UDHelper.shared.getUser()[indexPath.row]
