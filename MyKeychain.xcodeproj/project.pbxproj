@@ -63,12 +63,12 @@
 				F431E33D29F5B96A0014BA8A /* AppDelegate.swift */,
 				F431E33F29F5B96A0014BA8A /* SceneDelegate.swift */,
 				F431E34129F5B96A0014BA8A /* ViewController.swift */,
+				F46050E729F71966009FFD3E /* AddNewIds.swift */,
+				F438A4032A00476D001665EB /* UDHelper.swift */,
 				F431E34329F5B96A0014BA8A /* Main.storyboard */,
 				F431E34629F5B96B0014BA8A /* Assets.xcassets */,
 				F431E34829F5B96B0014BA8A /* LaunchScreen.storyboard */,
 				F431E34B29F5B96B0014BA8A /* Info.plist */,
-				F46050E729F71966009FFD3E /* AddNewIds.swift */,
-				F438A4032A00476D001665EB /* UDHelper.swift */,
 			);
 			path = MyKeychain;
 			sourceTree = "<group>";
