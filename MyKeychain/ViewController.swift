@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    static var shared = ViewController()
+    static var sharedVC = ViewController()
     
     @IBOutlet weak var addBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
