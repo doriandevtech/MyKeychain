@@ -32,7 +32,7 @@ class AddNewIds: UIViewController {
         UDHelper.shared.setUrl(url)
         UDHelper.shared.setUser(userId)
         UDHelper.shared.setPwd(pwd)
-        ViewController.shared.tableView.reloadData()
+        ViewController.sharedVC.tableView.reloadData()
         urlLinkTF.text = nil
         userIdTF.text = nil
         passwordTF.text = nil
