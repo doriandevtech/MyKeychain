@@ -45,8 +45,8 @@
 		F431E33129F5B96A0014BA8A = {
 			isa = PBXGroup;
 			children = (
-				F45C61042A2D34AE00835B45 /* README.md */,
 				F431E33C29F5B96A0014BA8A /* MyKeychain */,
+				F45C61042A2D34AE00835B45 /* README.md */,
 				F431E33B29F5B96A0014BA8A /* Products */,
 			);
 			sourceTree = "<group>";
