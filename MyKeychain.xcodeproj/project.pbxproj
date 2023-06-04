@@ -27,6 +27,7 @@
 		F431E34929F5B96B0014BA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F431E34B29F5B96B0014BA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F438A4032A00476D001665EB /* UDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDHelper.swift; sourceTree = "<group>"; };
+		F45C61042A2D34AE00835B45 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F46050E729F71966009FFD3E /* AddNewIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewIds.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +45,7 @@
 		F431E33129F5B96A0014BA8A = {
 			isa = PBXGroup;
 			children = (
+				F45C61042A2D34AE00835B45 /* README.md */,
 				F431E33C29F5B96A0014BA8A /* MyKeychain */,
 				F431E33B29F5B96A0014BA8A /* Products */,
 			);
